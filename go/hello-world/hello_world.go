@@ -1,6 +1,6 @@
 package greeting
 
-// HelloWorld should have a comment documenting it.
+// HelloWorld The classical introductory exercise. Just say "Hello, World!".
 func HelloWorld() string {
 	return "Hello, World!"
 }
