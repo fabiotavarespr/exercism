@@ -1,3 +1,7 @@
 .exercism
 
 __pycache__/
+
+.gradle/
+build.gradle
+build/
