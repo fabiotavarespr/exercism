@@ -10,12 +10,12 @@ exception vs returning a special value) may differ between languages.
 */
 package hamming
 
-import "errors"
+import "fmt"
 
 // Distance - Calculate the Hamming Distance between two DNA strands.
 func Distance(a, b string) (int, error) {
 	if len(a) != len(b) {
-		return -1, errors.New("Strings lengths don't match")
+		return 0, fmt.Errorf("Strings lengths don't match")
 	}
 
 	aChars := []rune(a)
