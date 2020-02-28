@@ -1,6 +1,20 @@
 #!/usr/bin/env bash
 
+function usage() {
+	echo "Usage: raindrops <number>" >&2
+	exit 1
+}
+
 main () {
+    #Check param has only one
+    if [ ! "$#" -eq 1 ]; then
+        usage
+    fi
+
+    #Check param is an number
+    if ! [[ $1 =~ ^[0-9]+$ ]]; then
+        usage
+    fi
 
     rainSound=""
     if (( $1 % 3 == 0 ))
